@@ -7,8 +7,8 @@
         <title>Monkaa: Watch and Download the animated short film</title>
         <meta name="description" content="Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Watch and download the animated short film here--for free!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO: Make a favicon that better represents the page. -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Inserted Monkaa.ico as new Favicon -->
+        <link rel="shortcut icon" href="monkaa.ico">
         <link rel="stylesheet" href="css/main.css">
     </head>
 
@@ -25,11 +25,11 @@
             <h1>Monkaa</h1>
             <p class="subtitle">An open source short film</p>
             <nav>
-                <ul class="main-nav">
-                    <li><a href="#watch">Watch</a></li>
-                    <li><a href="#listen">Listen</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+                <p class="main-nav">
+                    <a href="#watch">Watch</a>
+                    <a href="#listen">Listen</a>
+                    <a href="#about">About</a>
+                </p>
             </nav>
         </header>
 
@@ -42,31 +42,40 @@
                  that could help you make a more interactive design. -->
             <h2>Share</h2>
             <ul class="social-links">
-                <li class="twitter"><a href="http://twitter.com">Twitter</a></li>
-                <li class="facebook"><a href="http://facebook.com">Facebook</a></li>
-                <li class="instagram"><a href="http://instagram.com">Instagram</a></li>
+                <li class="twitter"><a href="http://twitter.com"><img src="img/glyphicons-social-32-twitter.png" alt="Twitter Icon"/></a></li>
+                <li class="facebook"><a href="http://facebook.com"><img src="img/glyphicons-social-31-facebook.png" alt="Facebook Icon"/></a></li>
+                <li class="instagram"><a href="http://instagram.com"><img src="img/glyphicons-social-33-instagram.png" alt="Instagram Icon"/></a></li>
             </ul>
         </aside>
 
         <section id="watch">
             <h2>Watch</h2>
-            <!-- TODO: Embed the .webm and .mp4 video with full controls for a
+            <!-- made video full width: Embed the .webm and .mp4 video with full controls for a
                  convenient and attractive video viewing experience. -->
+          
+          <video controls>
+              <source src="media/video/monkaa_1080p.mp4" type="video/mp4">
+              <source src="media/video/monkaa_1080p.webm" type="video/webm">
+          
+          </video>
 
-            <!-- TODO: Style an elegant download link to download the video. -->
+            <!-- added page break between file types -->
             <h3>Download the video</h3>
             <p>
                 Click below to download either MP4 or WEBM versions of this video.
                 <br>
-                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 Version</a>
-                <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM Version</a>
+                <a class="download-button" href="media/video/monkaa_1080p.mp4">.MP4 </a><br>
+                <a class="download-button" href="media/video/monkaa_1080p.webm">.WEBM </a>
             </p>
         </section>
 
         <section id="listen">
             <h2>Listen</h2>
-            <!-- TODO: Embed an audio player so users can play back the
+            <!-- Done: Embed an audio player so users can play back the
                  soundtrack MP3 directly on the page. -->
+          <audio controls>
+             <source src="media/audio/monkaa_soundtrack.mp3" type="audio/mpeg">
+                </audio>
 
             <!-- TODO: Style an elegant download link to download the video. -->
             <p>
@@ -81,40 +90,43 @@
             <h2>About</h2>
             <p class="lead">Monkaa is a blue-furred, pink-faced monkey who consumes a crystallized meteorite, making him invincibly strong and too hot to handle. Exploring his new superpowers, Monkaa zooms through an entire universe. </p>
 
-            <ul class="weybec-people">
+            <div  class="weybec-people" >
                 <!-- TODO: You must choose the proper image format to use for
                      each headshot below. Images are located in the
                      ``img/weybec/`` directory. -->
                 <li>
-                    <img class="headshot" src="TODO" alt="Pratik Solanki headshot"><br>
+                    <a href = "#" <span id = "weybec-people_1"/><img class="headshot" src="img/weybec/pratik_solanki.jpg" alt="Pratik Solanki headshot"><br>
                     Pratik Solanki<br>
-                    Co-Founder
+                  Co-Founder</span></a>
                 </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Nita Ravalji headshot"><br>
+                    <a href = "#" <span id = "weybec-people_2"/><img class="headshot" src="img/weybec/Nita-ravalji1.jpg" alt="Nita Ravalji headshot"><br>
                     Nita Ravalji<br>
-                    Co-Founder
-                </li>
+                      Co-Founder</span></a>
+               </li>
                 <li>
-                    <img class="headshot" src="TODO" alt="Niyal Parmar headshot"><br>
+                    <a href = "#" <span id = "weybec-people_3"/><img class="headshot" src="img/weybec/niyal_parmar.jpg" alt="Niyal Parmar headshot"><br>
                     Niyal Parmar<br>
-                    Co-Founder
+                  Co-Founder</span></a>
+                  
                 </li>
-            </ul>
+  </div>
 
             <p>Monkaa is produced by <a href="http://www.weybec.com/">Weybec</a>, an animation studio located in Mumbai, India and founded by Pratik Solanki, Nita Ravalji and Niyal Parmar.</p>
 
-            <p>Project Monkaa is a 5-minute short animated movie, entirely made with Blender and GIMP and other Free/Open Software programs. It has been released as an Open Movie, with all production files and tutorials available on <a href="https://cloud.blender.org/open-movie/monkaa/">Blender Cloud</a> under a CC-BY license, as well as on a DVD available in the <a href="http://www.blender3d.org/e-shop/">Blender Store</a>.</p>
+            <p>Project Monkaa is a 5-minute short animated movie, entirely made with Blender and GIMP and other Free/Open Software programs. It has been released as an Open Movie, with all production files and tutorials available on <a href="https://store.blender.org/product/membership/">Blender Cloud</a> under a CC-BY license, as well as on a DVD available in the <a href="https://store.blender.org/product/monkaa-open-movie/">Blender Store</a>.</p> <!-- Fix the link to the DVD product page and replace the cloud link to a the cloud membership sign-up page -->
         </section>
 
-        <footer><!-- TODO: Style the footer appropriately. -->
+        <footer><!-- changed main-nav from ul to paragraph -->
             <p>This page was created and designed by WEBDEV BEV in 2015. <i>Monkaa</i> was created by <a href="http://www.weybec.com/">Weybec</a> and is used here under a CC-BY license.</p>
+            
+           
             <nav>
-                <ul class="main-nav">
-                    <li><a href="#watch">Watch</a></li>
-                    <li><a href="#listen">Listen</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
+                <p class="main-nav">
+                    <a href="#watch">Watch</a>
+                    <a href="#listen">Listen</a>
+                    <a href="#about">About</a>
+                </p>
             </nav>
         </footer>
 
